@@ -1,101 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tridev | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>Portfolio | Tridev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a class="logo" href="#home">TRIDEV</a>
+            <div class="nav-links all-caps">
+                <a class="active" href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a class="resume button-outline" href="/public/resume.pdf" target="_blank">Resume</a>
+        </div>
+    </nav>
 
-<nav>
-    <div class="logo">TRIDEV</div>
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">01 / INTRODUCTION</p>
+            <h1>Hi, I'm <span>Tridev</span></h1>
+            <p class="hero-lede">Computer Science Student <b>•</b> Web Developer <b>•</b> Python &amp; DSA Learner</p>
+            <a class="button-fill" href="#contact">Let's Connect <span aria-hidden="true">↗</span></a>
+        </section>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <section class="content-section" id="about">
+            <div class="section-label"><span>02</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="section-copy">
+                <p>I'm a BCA student passionate about building websites with Python and DSA, and solving real-world problems
+                    with technology. Currently learning full-stack development and AI tools while improving my
+                    programming skills every day.</p>
+            </div>
+        </section>
 
-<section class="hero">
-    <h1>Hi, I'm <span>Tridev</span></h1>
+        <section class="content-section" id="skills">
+            <div class="section-label"><span>03</span>
+                <h2>Core Skills</h2>
+            </div>
+            <div class="section-copy skills-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C++</span><span>Python</span><span>DSA</span><span>Git</span>
+            </div>
+        </section>
 
-    <p>
-        Computer Science Student • Web Developer • AI Automation Enthusiast
-    </p>
+        <section class="projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">04 / SELECTED WORK</p>
+                <h2>Projects</h2>
+            </div>
+            <article class="project-card">
+                <div class="project-visual"><span class="code-mark">&lt;/&gt;</span><span class="status">IN
+                        PROGRESS</span></div>
+                <div class="project-details">
+                    <h3>Coming Soon</h3>
+                    <p>I'm currently building projects in web development, Python, and DSA. They will be showcased here
+                        soon.</p>
+                    <div class="tags"><span>WEB DEV</span><span>AI</span></div>
+                </div>
+            </article>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="contact-panel contact-details">
+                <h2>Get in Touch</h2>
+                <p>Direct contact information.</p>
+                <div class="contact-list">
+                    <a href="mailto:tridevops@proton.me"><span class="contact-icon" aria-hidden="true">@</span><span><small>Email</small>tridevops@proton.me</span></a>
+                    <a href="https://github.com/tridev09-ops"><span class="contact-icon" aria-hidden="true">&lt;/&gt;</span><span><small>GitHub</small>github.com/tridev09-ops</span></a>
+                    <a href="https://linkedin.com/in/tridev09-ops"><span class="contact-icon" aria-hidden="true">in</span><span><small>LinkedIn</small>linkedin.com/in/tridev09-ops</span></a>
+                </div>
+            </div>
+            <div class="contact-panel contact-form-panel">
+                <h2>Send a Message</h2>
+                <p>Typically respond within 24 hours.</p>
+                <form action="mailto:tridevops@proton.me" method="post" enctype="text/plain">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we collaborate?" required></textarea>
+                    </div>
+                    <button class="button-fill form-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <a href="#contact" class="btn">Let's Connect</a>
-</section>
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        I'm a BCA student passionate about building websites, AI automation,
-        and solving real-world problems with technology. Currently learning
-        full-stack development and AI tools while improving my programming
-        skills every day.
-    </p>
-</section>
-
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">C++</div>
-        <div class="card">Python</div>
-        <div class="card">Git</div>
-        <div class="card">AI Automation</div>
-    </div>
-
-</section>
-
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project">
-
-        <h3>Coming Soon</h3>
-
-        <p>
-            I'm currently building projects in web development and AI automation.
-            They will be showcased here soon.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <p>Email: <a href="mailto:tridev.js@gmail.com">tridev.js@gmail.com</a></p>
-
-    <p>GitHub: <a href="https://github.com/tridev09-ops" target="_blank">github.com/tridev09-ops</a></p>
-
-    <p>LinkedIn: <a href="https://linkedin.com/in/tridev09-ops" target="_blank">linkedin.com/in/tridev09-ops</a></p>
-
-</section>
-
-<footer>
-
-    © 2026 Tridev. All Rights Reserved.
-
-</footer>
-
-<script src="script.js"></script>
-
+    <footer>
+        <div class="footer-inner">
+            <a class="logo" href="#home">TRIDEV</a>
+            <a class="email" href="mailto:tridevops@proton.me">tridevops@proton.me</a>
+            <div class="socials"><a href="https://github.com/tridev09-ops">GitHub</a><a
+                    href="https://linkedin.com/in/tridev09-ops">LinkedIn</a><a href="https://twitter.com">Twitter</a>
+            </div>
+            <small>© 2024 TRIDEV. Built with precision and curiosity.</small>
+        </div>
+    </footer>
 </body>
+
 </html>
